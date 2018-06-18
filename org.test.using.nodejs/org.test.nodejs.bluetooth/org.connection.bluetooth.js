@@ -1,4 +1,5 @@
-// MORANDO NICOLO'
+// Morando Nicolò
+// Simple NodeJs serial connection using 'serialport'.
 
 var SerialPort = require('serialport')
 
