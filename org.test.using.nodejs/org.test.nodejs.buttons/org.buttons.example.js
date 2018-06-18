@@ -1,3 +1,6 @@
+// Morando Nicolò
+// Simple telegram bot with buttons using 'node-telegram-bot-api'.
+
 var Bot = require('node-telegram-bot-api')
 
 var bot = new Bot(config.telegram.token, { polling: true });
