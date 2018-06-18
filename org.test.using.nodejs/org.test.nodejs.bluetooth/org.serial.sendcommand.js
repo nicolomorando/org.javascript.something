@@ -1,9 +1,7 @@
-// MORANDO NICOLO'
+// Morando Nicolò	
+// to send string to a serial port.
 
-var SerialPort = require('serialport');
-
-
-// OPEN SERIAL CONNECTION 
+var SerialPort = require('serialport'); 
 
 var Readline = SerialPort.parsers.Readline
 var serialPort = new SerialPort('COM7', {
@@ -19,9 +17,6 @@ parser.on('data', function (data) {
 serialPort.on('open', function () {
 	console.log('Communication is on!')
 })
-
-
-// SEND COMMAND, STRING TO A PORT
 
 serialPort.write('writing..', function(err) {
   if (err) {
